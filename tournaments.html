@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tournaments - Gaming Site</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="tournaments.html">Tournaments</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Join the Battle</h1>
+    <p>Compete in thrilling tournaments and prove your gaming prowess.</p>
+  </section>
+
+  <!-- Upcoming Tournaments -->
+  <section class="upcoming-tournaments">
+    <h2>Upcoming Tournaments</h2>
+    <div class="tournament-card">
+      <img src="images/tournament1.jpg" alt="Tournament 1">
+      <h3>Tournament 1</h3>
+      <p>Game: Game Name</p>
+      <p>Date: May 1, 2024</p>
+      <a href="#" class="btn">Register Now</a>
+    </div>
+    <!-- Add more tournament cards here -->
+  </section>
+
+  <!-- Tournament Registration -->
+  <section class="registration">
+    <h2>Register for Tournaments</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="tournament">Tournament:</label>
+        <select id="tournament" name="tournament">
+          <option value="">Select a tournament</option>
+          <option value="tournament1">Tournament 1</option>
+          <option value="tournament2">Tournament 2</option>
+          <!-- Add more tournament options here -->
+        </select>
+      </div>
+      <button type="submit" class="btn">Register</button>
+    </form>
+  </section>
+
+  <!-- Tournament Rules -->
+  <section class="rules">
+    <h2>Tournament Rules</h2>
+    <ol>
+      <li>Rule 1</li>
+      <li>Rule 2</li>
+      <li>Rule 3</li>
+      <!-- Add more rules here -->
+    </ol>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; Gaming Site</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #170c0c;
+  color: #aaa4a4;
+}
+
+header {
+  background-color: #222;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+  font-size: 1.2em;
+}
+
+nav ul li a:hover {
+  color: #ff6600;
+}
+
+.hero {
+  background-image: url('images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  max-width: 600px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+section {
+  padding: 2rem;
+}
+
+.featured-games,
+.upcoming-tournaments,
+.forum,
+.create-post,
+.events {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.game-card,
+.tournament-card,
+.forum-post,
+.event-card {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.game-card:hover,
+.tournament-card:hover,
+.forum-post:hover,
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+.game-card img,
+.tournament-card img,
+.event-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e65c00;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  cursor: pointer;
+  background-color: #ff6600;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #e65c00;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
